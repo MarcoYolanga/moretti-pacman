@@ -120,7 +120,7 @@ describe('pacman', () => {
       pacman.setSpriteSheet('up');
       assert.strictEqual(
         pacman.animationTarget.style.backgroundImage,
-        `${baseUrl}pacman_up.svg)`,
+        `${baseUrl}pacman_up_moretti.png)`,
       );
       pacman.setSpriteSheet('down');
       assert.strictEqual(

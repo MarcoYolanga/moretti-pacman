@@ -942,7 +942,7 @@ class Pacman {
    */
   setSpriteSheet(direction) {
     this.animationTarget.style.backgroundImage = 'url(app/style/graphics/'
-      + `spriteSheets/characters/pacman/pacman_${direction}.svg)`;
+      + `spriteSheets/characters/pacman/pacman_${direction}_moretti.png)`;
   }
 
   prepDeathAnimation() {
@@ -1323,7 +1323,7 @@ class GameCoordinator {
         `${imgBase}characters/pacman/pacman_down.svg`,
         `${imgBase}characters/pacman/pacman_left.svg`,
         `${imgBase}characters/pacman/pacman_right.svg`,
-        `${imgBase}characters/pacman/pacman_up.svg`,
+        `${imgBase}characters/pacman/pacman_up_moretti.png`,
 
         // Blinky
         `${imgBase}characters/ghosts/blinky/blinky_down_angry.svg`,
