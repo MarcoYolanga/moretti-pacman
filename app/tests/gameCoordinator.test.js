@@ -384,7 +384,7 @@ describe('gameCoordinator', () => {
       comp.lives = 3;
 
       comp.updateExtraLivesDisplay();
-      assert(spy.calledWith('src', 'app/style/graphics/extra_life.svg'));
+      assert(spy.calledWith('src', 'app/style/graphics/extra_life_moretti.png'));
       assert(spy.calledThrice);
     });
   });
