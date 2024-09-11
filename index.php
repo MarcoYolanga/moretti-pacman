@@ -49,7 +49,7 @@ require("./include/lib.php");
             <div id='points-display'></div>
           </div>
           <div class='column _50'>
-            <div>PREVENTIVO</div>
+            <div>FATTURATO</div>
             <div id='high-score-display'></div>
           </div>
         </div>
