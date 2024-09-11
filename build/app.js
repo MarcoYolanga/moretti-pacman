@@ -954,7 +954,7 @@ class Pacman {
     const bgSize = this.measurement * this.spriteFrames;
     this.animationTarget.style.backgroundSize = `${bgSize}px`;
     this.animationTarget.style.backgroundImage = 'url(app/style/'
-      + 'graphics/spriteSheets/characters/pacman/pacman_death.svg)';
+      + 'graphics/spriteSheets/characters/pacman/pacman_death_moretti.png)';
     this.animationTarget.style.backgroundPosition = '0px 0px';
     this.pacmanArrow.style.backgroundImage = '';
   }
@@ -1212,7 +1212,6 @@ class GameCoordinator {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'build/app.css';
-
     link.onload = this.preloadAssets.bind(this);
 
     head.appendChild(link);
@@ -1318,7 +1317,7 @@ class GameCoordinator {
         `${imgBase}characters/pacman/arrow_left.svg`,
         `${imgBase}characters/pacman/arrow_right.svg`,
         `${imgBase}characters/pacman/arrow_up.svg`,
-        `${imgBase}characters/pacman/pacman_death.svg`,
+        `${imgBase}characters/pacman/pacman_death_moretti.png`,
         `${imgBase}characters/pacman/pacman_error.svg`,
         `${imgBase}characters/pacman/pacman_down.svg`,
         `${imgBase}characters/pacman/pacman_left.svg`,
@@ -1439,6 +1438,9 @@ class GameCoordinator {
             loadingContainer.remove();
             this.mainMenu.style.opacity = 1;
             this.mainMenu.style.visibility = 'visible';
+            setTimeout(() => {
+              document.getElementById('game-start').click();
+            }, 2000);
           }, 1500);
         })
         .catch(this.displayErrorMessage);
@@ -1601,8 +1603,8 @@ class GameCoordinator {
       });
     }
 
-    this.pointsDisplay.innerHTML = '00';
-    this.highScoreDisplay.innerHTML = this.highScore || '00';
+    this.pointsDisplay.innerHTML = '00€';
+    this.highScoreDisplay.innerHTML =( this.highScore || '00') +"€";
     this.clearDisplay(this.fruitDisplay);
 
     const volumePreference = parseInt(
@@ -1901,10 +1903,10 @@ class GameCoordinator {
    */
   awardPoints(e) {
     this.points += e.detail.points;
-    this.pointsDisplay.innerText = this.points;
+    this.pointsDisplay.innerText = this.points+"€";
     if (this.points > (this.highScore || 0)) {
       this.highScore = this.points;
-      this.highScoreDisplay.innerText = this.points;
+      this.highScoreDisplay.innerText = this.points+"€";
       localStorage.setItem('highScore', this.highScore);
     }
 

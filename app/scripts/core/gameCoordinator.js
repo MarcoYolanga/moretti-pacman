@@ -103,7 +103,11 @@ class GameCoordinator {
     link.rel = 'stylesheet';
     link.href = 'build/app.css';
 
-    link.onload = this.preloadAssets.bind(this);
+    console.log('eee');
+    link.onload = this.preloadAssets.bind(this).then(function(){
+      console.log('fire');
+      document.getElementById('game-start').click();
+    });
 
     head.appendChild(link);
   }

@@ -1,25 +1,16 @@
-<!DOCTYPE html>
+<?php 
+require("./include/lib.php");
+?><!DOCTYPE html>
 <html>
   <head>
-    <meta name="description" content="Play Pacman for free!">
-    <meta name="keywords" content="Pacman,arcade,8-bit,classic,fun,games">
-    <meta name="auhtor" content="Angelo">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-142539004-1'></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-142539004-1');
-    </script>
-
-    <script src='build/app.js'></script>
+    <meta name="description" content="Pac-Moretti Alberto">
+    <meta name="auhtor" content="Moretti Alberto">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons'
-      rel='stylesheet'>
-    <title>Pacman</title>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    
+    <?php import(["build/app.js", "build/custom.css"]) ?>
+    <title>Pac-Moretti Alberto</title>
   </head>
 
   <body>
@@ -30,7 +21,7 @@
       <div id='preload-div' class='preload-div'></div>
 
       <div id='main-menu-container' class='main-menu-container'>
-        <img id='logo' class='logo' src='app/style/graphics/pacman_logo_moretti.png'>
+        <img id='logo' class='logo' src='app/style/graphics/pacman_logo_moretti.png?mt=<?php echo _filemtime('app/style/graphics/pacman_logo_moretti.png') ?>'>
         <button id='game-start' class='game-start'>
           PLAY
         </button>
@@ -58,7 +49,7 @@
             <div id='points-display'></div>
           </div>
           <div class='column _50'>
-            <div>HIGH SCORE</div>
+            <div>PREVENTIVO</div>
             <div id='high-score-display'></div>
           </div>
         </div>
@@ -144,6 +135,8 @@
       <script>
         window.onload = () => {
           let gameCoordinator = new GameCoordinator();
+          //gameCoordinator.startButtonClick();
+          
         }
       </script>
     </div>

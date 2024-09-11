@@ -1,0 +1,6 @@
+body{
+    background: #ffdf00;
+}
+#game-start, .one-up{
+    display: none !important;
+}
