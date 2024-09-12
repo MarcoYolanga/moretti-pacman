@@ -2014,6 +2014,9 @@ class GameCoordinator {
           this.mainMenu.style.opacity = 1;
           this.gameStartButton.disabled = false;
           this.mainMenu.style.visibility = 'visible';
+          setTimeout(() => {
+            document.getElementById('game-start').click();
+          }, 2000);
         }, 1000);
       }, 2500);
     }, 2250);
