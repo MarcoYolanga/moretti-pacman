@@ -176,13 +176,13 @@ class Ghost {
 
     if (mode === 'scared') {
       this.animationTarget.style.backgroundImage = 'url(app/style/graphics/'
-        + `spriteSheets/characters/ghosts/scared_${this.scaredColor}.svg)`;
+        + `spriteSheets/characters/ghosts/branded/scared_${this.scaredColor}.svg)`;
     } else if (mode === 'eyes') {
       this.animationTarget.style.backgroundImage = 'url(app/style/graphics/'
-        + `spriteSheets/characters/ghosts/eyes_${direction}.svg)`;
+        + `spriteSheets/characters/ghosts/branded/eyes_${direction}.svg)`;
     } else {
       this.animationTarget.style.backgroundImage = 'url(app/style/graphics/'
-        + `spriteSheets/characters/ghosts/${name}/${name}_${direction}`
+        + `spriteSheets/characters/ghosts/branded/${name}/${name}_${direction}`
         + `${emotion}.svg)`;
     }
   }
@@ -1325,44 +1325,44 @@ class GameCoordinator {
         `${imgBase}characters/pacman/pacman_up_moretti.png`,
 
         // Blinky
-        `${imgBase}characters/ghosts/blinky/blinky_down_angry.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_down_annoyed.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_down.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_left_angry.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_left_annoyed.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_left.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_right_angry.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_right_annoyed.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_right.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_up_angry.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_up_annoyed.svg`,
-        `${imgBase}characters/ghosts/blinky/blinky_up.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_down_angry.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_down_annoyed.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_down.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_left_angry.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_left_annoyed.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_left.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_right_angry.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_right_annoyed.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_right.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_up_angry.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_up_annoyed.svg`,
+        `${imgBase}characters/ghosts/branded/blinky/blinky_up.svg`,
 
         // Clyde
-        `${imgBase}characters/ghosts/clyde/clyde_down.svg`,
-        `${imgBase}characters/ghosts/clyde/clyde_left.svg`,
-        `${imgBase}characters/ghosts/clyde/clyde_right.svg`,
-        `${imgBase}characters/ghosts/clyde/clyde_up.svg`,
+        `${imgBase}characters/ghosts/branded/clyde/clyde_down.svg`,
+        `${imgBase}characters/ghosts/branded/clyde/clyde_left.svg`,
+        `${imgBase}characters/ghosts/branded/clyde/clyde_right.svg`,
+        `${imgBase}characters/ghosts/branded/clyde/clyde_up.svg`,
 
         // Inky
-        `${imgBase}characters/ghosts/inky/inky_down.svg`,
-        `${imgBase}characters/ghosts/inky/inky_left.svg`,
-        `${imgBase}characters/ghosts/inky/inky_right.svg`,
-        `${imgBase}characters/ghosts/inky/inky_up.svg`,
+        `${imgBase}characters/ghosts/branded/inky/inky_down.svg`,
+        `${imgBase}characters/ghosts/branded/inky/inky_left.svg`,
+        `${imgBase}characters/ghosts/branded/inky/inky_right.svg`,
+        `${imgBase}characters/ghosts/branded/inky/inky_up.svg`,
 
         // Pinky
-        `${imgBase}characters/ghosts/pinky/pinky_down.svg`,
-        `${imgBase}characters/ghosts/pinky/pinky_left.svg`,
-        `${imgBase}characters/ghosts/pinky/pinky_right.svg`,
-        `${imgBase}characters/ghosts/pinky/pinky_up.svg`,
+        `${imgBase}characters/ghosts/branded/pinky/pinky_down.svg`,
+        `${imgBase}characters/ghosts/branded/pinky/pinky_left.svg`,
+        `${imgBase}characters/ghosts/branded/pinky/pinky_right.svg`,
+        `${imgBase}characters/ghosts/branded/pinky/pinky_up.svg`,
 
         // Ghosts Common
-        `${imgBase}characters/ghosts/eyes_down.svg`,
-        `${imgBase}characters/ghosts/eyes_left.svg`,
-        `${imgBase}characters/ghosts/eyes_right.svg`,
-        `${imgBase}characters/ghosts/eyes_up.svg`,
-        `${imgBase}characters/ghosts/scared_blue.svg`,
-        `${imgBase}characters/ghosts/scared_white.svg`,
+        `${imgBase}characters/ghosts/branded/eyes_down.svg`,
+        `${imgBase}characters/ghosts/branded/eyes_left.svg`,
+        `${imgBase}characters/ghosts/branded/eyes_right.svg`,
+        `${imgBase}characters/ghosts/branded/eyes_up.svg`,
+        `${imgBase}characters/ghosts/branded/scared_blue.svg`,
+        `${imgBase}characters/ghosts/branded/scared_white.svg`,
 
         // Dots
         `${imgBase}pickups/pacdot.svg`,
